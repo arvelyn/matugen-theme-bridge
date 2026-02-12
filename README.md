@@ -80,7 +80,7 @@ matugen-theme-bridge/
 
 ## Installation
 
-Option A - Install from VSIX (recommended)
+### Option A - Install from VSIX (recommended)
 
 Download ` matugen-theme-bridge-1.0.0.vsix` from releases
 then open VSCodium ` ctrl+shift+P ` -> Extension:Install Extension -> install form vsix
