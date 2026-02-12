@@ -80,7 +80,21 @@ matugen-theme-bridge/
 
 ## Installation
 
-### Option A — Install from VSIX (recommended)
+Option B - Install from VSIX (recommended)
+
+Download ` matugen-theme-bridge-1.0.0.vsix` from releases
+then open VSCodium ` ctrl+shift+P ` -> Extension:Install Extension -> install form vsix
+select `matugen-theme-bridge-1.0.0.vsix` and Done 
+
+          or 
+```
+# 5a. Install in VS Code
+code --install-extension matugen-theme-bridge-1.0.0.vsix
+
+# 5b. Install in VSCodium
+codium --install-extension matugen-theme-bridge-1.0.0.vsix
+```
+### Option B — Install from VSIX (recommended)
 
 ```bash
 # 1. Clone the repository
@@ -104,7 +118,7 @@ code --install-extension matugen-theme-bridge-1.0.0.vsix
 codium --install-extension matugen-theme-bridge-1.0.0.vsix
 ```
 
-### Option B — Open in development mode (no packaging needed)
+### Option C — Open in development mode (no packaging needed)
 
 ```bash
 git clone https://github.com/yourusername/matugen-theme-bridge
@@ -194,30 +208,24 @@ Actually, use matugen's full template system. Here is a working template example
 ```
 {
   "_meta": {
-    "generated": "{{date}}",
-    "variant": "{{variant}}"
+    "source": "matugen",
+    "variant": "{{mode}}"
   },
-  "editor.background":                  "{{colors.dark.surface}}",
-  "editor.foreground":                  "{{colors.dark.on_surface}}",
-  "activityBar.background":             "{{colors.dark.surface_container_lowest}}",
-  "activityBarBadge.background":        "{{colors.dark.primary}}",
-  "activityBarBadge.foreground":        "{{colors.dark.on_primary}}",
-  "statusBar.background":               "{{colors.dark.surface_container_lowest}}",
-  "statusBar.foreground":               "{{colors.dark.on_surface}}",
-  "statusBarItem.remoteBackground":     "{{colors.dark.primary}}",
-  "statusBarItem.remoteForeground":     "{{colors.dark.on_primary}}",
-  "tab.activeBorderTop":                "{{colors.dark.primary}}",
-  "focusBorder":                        "{{colors.dark.primary}}",
-  "button.background":                  "{{colors.dark.primary}}",
-  "button.foreground":                  "{{colors.dark.on_primary}}",
-  "badge.background":                   "{{colors.dark.primary}}",
-  "badge.foreground":                   "{{colors.dark.on_primary}}",
-  "list.highlightForeground":           "{{colors.dark.primary}}",
-  "progressBar.background":             "{{colors.dark.primary}}",
-  "input.background":                   "{{colors.dark.surface_container_high}}",
-  "input.foreground":                   "{{colors.dark.on_surface}}",
-  "editor.selectionBackground":         "{{colors.dark.surface_container_highest}}",
-  "editor.lineHighlightBackground":     "{{colors.dark.surface_container_low}}"
+
+  "editor.background": "{{colors.surface.default.hex}}",
+  "editor.foreground": "{{colors.on_surface.default.hex}}",
+  "editorLineNumber.foreground": "{{colors.on_surface_variant.default.hex}}",
+  "editorLineNumber.activeForeground": "{{colors.primary.default.hex}}",
+  "editorCursor.foreground": "{{colors.primary.default.hex}}",
+  "editor.selectionBackground": "{{colors.surface_container_highest.default.hex}}",
+  "editor.inactiveSelectionBackground": "{{colors.surface_container_high.default.hex}}",
+  "editor.lineHighlightBackground": "{{colors.surface_container_low.default.hex}}",
+  "editor.findMatchBackground": "{{colors.tertiary_container.default.hex}}80",
+  "editor.findMatchHighlightBackground": "{{colors.tertiary_container.default.hex}}40",
+  "editor.wordHighlightBackground": "{{colors.secondary_container.default.hex}}40",
+  "editor.wordHighlightStrongBackground": "{{colors.secondary_container.default.hex}}60",
+  "editor.hoverHighlightBackground": "{{colors.surface_container_high.default.hex}}",
+
 }
 ```
 
@@ -352,4 +360,4 @@ Set `matugenBridge.palettePath` to:
 
 ## License
 
-MIT © 2024
+Dual License © 2026
