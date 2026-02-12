@@ -1,0 +1,71 @@
+{
+  "name": "matugen-theme-bridge",
+  "displayName": "Matugen Theme Bridge",
+  "description": "Dynamically applies Matugen/Material You color palettes to VS Code / VSCodium without reloading",
+  "version": "1.0.0",
+  "publisher": "matugen-bridge",
+  "license": "MIT",
+  "engines": { "vscode": "^1.75.0" },
+  "categories": ["Themes", "Other"],
+  "keywords": ["matugen", "material-you", "dynamic-theme", "live-colors", "hyprland"],
+  "activationEvents": ["onStartupFinished"],
+  "main": "./out/extension.js",
+  "contributes": {
+    "themes": [
+      {
+        "label": "Matugen Dark",
+        "uiTheme": "vs-dark",
+        "path": "./resources/themes/matugen-dark-base.json"
+      },
+      {
+        "label": "Matugen Light",
+        "uiTheme": "vs",
+        "path": "./resources/themes/matugen-light-base.json"
+      }
+    ],
+    "commands": [
+      { "command": "matugenBridge.applyNow",      "title": "Matugen: Apply Palette Now" },
+      { "command": "matugenBridge.clearOverrides", "title": "Matugen: Clear Color Overrides" },
+      { "command": "matugenBridge.showStatus",     "title": "Matugen: Show Bridge Status" }
+    ],
+    "configuration": {
+      "title": "Matugen Theme Bridge",
+      "properties": {
+        "matugenBridge.palettePath": {
+          "type": "string",
+          "default": "",
+          "markdownDescription": "Override palette file path. Leave empty for default:\n`~/.config/VSCodium/User/Theme/vscode-palette.json`\n\nSupports `~` expansion."
+        },
+        "matugenBridge.debounceMs": {
+          "type": "number",
+          "default": 300,
+          "minimum": 50,
+          "maximum": 5000,
+          "description": "Wait time (ms) after palette change before reapplying colors."
+        },
+        "matugenBridge.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Master switch for the Matugen Theme Bridge."
+        },
+        "matugenBridge.logLevel": {
+          "type": "string",
+          "default": "info",
+          "enum": ["silent", "info", "debug"],
+          "description": "Output channel verbosity."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "npx vsce package"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "@types/vscode": "^1.75.0",
+    "typescript": "^5.0.0"
+  }
+}
