@@ -1,0 +1,63 @@
+# Dual License Notice
+
+Copyright (c) 2026 grey
+
+This project is dual-licensed under the terms below.
+
+---
+
+## 1. GNU General Public License v3.0 (GPL-3.0)
+
+This project is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Under this license:
+- You may use, modify, and distribute the software
+- You may use it commercially
+- You MUST disclose source code
+- You MUST license derivative works under GPL-3.0
+
+See the full license text here:
+https://www.gnu.org/licenses/gpl-3.0.html
+
+---
+
+## 2. Commercial License (Required for Closed-Source or Proprietary Use)
+
+Any use of this software that does **not** comply with the GNU GPL v3,
+including but not limited to:
+
+- Closed-source or proprietary software
+- Commercial redistribution without source disclosure
+- Rebranding or selling as part of a paid product
+- Bundling with commercial software or services
+- Marketplace redistribution under a different name
+
+**requires an explicit commercial license** from the copyright holder.
+
+Commercial licenses are available by contacting:
+
+📧 Contact: grey (project author)
+
+---
+
+## 3. License Selection
+
+By using, modifying, or distributing this software, you agree that:
+- You are either complying fully with the terms of GPL-3.0  
+**OR**
+- You have obtained a separate commercial license from the author
+
+There is no third option.
+
+---
+
+## 4. Warranty Disclaimer
+
+THIS SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER
+LIABILITY ARISING FROM THE USE OF THE SOFTWARE.
