@@ -99,7 +99,7 @@ codium --install-extension matugen-theme-bridge-1.0.0.vsix
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/yourusername/matugen-theme-bridge
+git clone https://github.com/Grey-007/matugen-theme-bridge
 cd matugen-theme-bridge
 
 # 2. Install dependencies
@@ -122,7 +122,7 @@ codium --install-extension matugen-theme-bridge-1.0.0.vsix
 ### Option C — Open in development mode (no packaging needed)
 
 ```bash
-git clone https://github.com/yourusername/matugen-theme-bridge
+git clone https://github.com/Grey-007/matugen-theme-bridge
 cd matugen-theme-bridge
 npm install
 npm run compile
